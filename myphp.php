@@ -59,4 +59,20 @@ if (in_array('MacOS', $os, true)) { echo 'Got MacOS'.PHP_EOL;}
 // Multidimensional Arrays 
 
 
-?>
+$list = [0, 2, 4, 6, 8, 10];
+
+$matrix = [
+		[0, 1, 2, 3],   // sequence
+		[0, 2, 4, 6],   // even
+		[1, 3, 5, 7],   // odd
+		[2, 4, 8, 16]  // power of 2
+];
+
+// Traversing a multidimensional array
+
+for ( $i = 0; $i < count($matrix); $i++ ) {
+    for ($j = 0; $j < count($matrix[$i]); $j++) {
+        echo $matrix[$i][$j].PHP_EOL;
+    }
+}
+
