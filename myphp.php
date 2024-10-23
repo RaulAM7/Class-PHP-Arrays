@@ -48,4 +48,15 @@ $array78 = [
 print_r(array_slice($array78, 5, 2, true));
 
 
+$os = array("Microsoft", "MacOS", "Solaris", "Unix",  "Linux");
+
+if (in_array('Unix', $os, true)) { echo 'Got Unix'.PHP_EOL;}
+
+if (in_array('MacOS', $os, true)) { echo 'Got MacOS'.PHP_EOL;}
+
+
+
+// Multidimensional Arrays 
+
+
 ?>
